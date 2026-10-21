@@ -1,0 +1,21 @@
+{
+  "model_checkpoint": "weights/fer_model_enet_b0_8_best_vgaf_3classes_best.pth",
+  "backbone": "enet_b0_8_best_vgaf",
+  "target_classes": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "method": "probability_multipliers",
+  "baseline_macro_f1": 0.6603731461059082,
+  "calibrated_macro_f1": 0.6838970380248112,
+  "multipliers": [
+    0.9375,
+    0.7688,
+    1.2937
+  ],
+  "clinical_thresholds": {
+    "thresh_pos": 0.36,
+    "thresh_neu": 0.45
+  }
+}
